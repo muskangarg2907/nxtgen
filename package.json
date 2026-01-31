@@ -1,0 +1,29 @@
+{
+  "name": "nxtgen",
+  "version": "1.0.0",
+  "description": "first iteration of the nextgenlearning academy webiste",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muskangarg2907/nxtgen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/muskangarg2907/nxtgen/issues"
+  },
+  "homepage": "https://github.com/muskangarg2907/nxtgen#readme",
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "vite": "^7.3.1"
+  }
+}
