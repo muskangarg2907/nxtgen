@@ -15,15 +15,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/muskangarg2907/nxtgen/issues"
   },
   "homepage": "https://github.com/muskangarg2907/nxtgen#readme",
   "dependencies": {
-    "@vitejs/plugin-react": "^5.1.2",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
     "vite": "^7.3.1"
   }
 }
