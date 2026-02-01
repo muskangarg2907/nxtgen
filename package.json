@@ -4,8 +4,9 @@
   "description": "first iteration of the nextgenlearning academy webiste",
   "main": "index.js",
   "scripts": {
-    "dev": "echo 'Open index.html in browser'",
-    "build": "echo 'No build needed - static HTML'"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
