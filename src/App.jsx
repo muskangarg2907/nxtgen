@@ -9,9 +9,9 @@ function App() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="text-center md:text-left">
-              <p className="uppercase tracking-widest text-sm mb-4 opacity-80 pulse-animation">CBSE, ICSE</p>
+              <p className="uppercase tracking-widest text-sm mb-4 opacity-80 pulse-animation">CBSE, ICSE, ISC</p>
               <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6 drop-shadow-lg">SMALL GROUP ONLINE TUTORING</h1>
-              <p className="text-xl md:text-2xl mb-10 opacity-90 font-light">Personalized attention for Grade 8, 9 & 10</p>
+              <p className="text-xl md:text-2xl mb-10 opacity-90 font-light">Personalized attention for Grade 9, 10, 11 & 12</p>
               <a href="https://calendar.app.google/qm226CX9qGUy12KY9" target="_blank" rel="noreferrer" className="cta-button inline-block bg-white text-navy font-bold py-4 px-10 rounded-full hover:bg-opacity-90 transition duration-300">
                 BOOK DEMO, START EARLY
               </a>
@@ -22,7 +22,7 @@ function App() {
                 <ul className="space-y-4">
                   <li className="flex items-center space-x-3">
                     <span className="text-2xl">✓</span>
-                    <span className="text-lg">Only 4 students per batch</span>
+                    <span className="text-lg">Only 5 students per batch</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <span className="text-2xl">✓</span>
@@ -46,25 +46,53 @@ function App() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">Our Subjects</h2>
-          <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">Comprehensive coverage for Grade 8, 9 & 10 students</p>
+          <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">Comprehensive coverage for Grade 9, 10, 11 & 12 students</p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 border-2 border-blue-200">
-              <div className="text-5xl mb-4">📐</div>
-              <h3 className="text-2xl font-bold text-navy mb-2">Mathematics</h3>
-              <p className="text-gray-600 text-sm">Problem solving, Concepts & Mental Ability</p>
+          {/* Grade 9 & 10 Section */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-navy mb-3">Grade 9 & 10 (CBSE, ICSE)</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 border-2 border-blue-200">
+                <div className="text-5xl mb-4">📐</div>
+                <h4 className="text-2xl font-bold text-navy mb-2">Mathematics</h4>
+                <p className="text-gray-600 text-sm">Problem solving, Concepts & Mental Ability</p>
+              </div>
+              
+              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 border-2 border-green-200">
+                <div className="text-5xl mb-4">🔬</div>
+                <h4 className="text-2xl font-bold text-navy mb-2">Science</h4>
+                <p className="text-gray-600 text-sm">Physics, Chemistry & Biology</p>
+              </div>
+              
+              <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 border-2 border-amber-200">
+                <div className="text-5xl mb-4">🌍</div>
+                <h4 className="text-2xl font-bold text-navy mb-2">Social Studies</h4>
+                <p className="text-gray-600 text-sm">History, Geography, Civics & Economics</p>
+              </div>
             </div>
-            
-            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 border-2 border-green-200">
-              <div className="text-5xl mb-4">🔬</div>
-              <h3 className="text-2xl font-bold text-navy mb-2">Science</h3>
-              <p className="text-gray-600 text-sm">Physics, Chemistry, Biology & Astronomy</p>
-            </div>
-            
-            <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 border-2 border-amber-200">
-              <div className="text-5xl mb-4">🌍</div>
-              <h3 className="text-2xl font-bold text-navy mb-2">Social Science</h3>
-              <p className="text-gray-600 text-sm">History, Geography, Civics, Economics & EVS</p>
+          </div>
+
+          {/* Grade 11 & 12 Section */}
+          <div>
+            <h3 className="text-2xl font-bold text-navy mb-3">Grade 11 & 12 (CBSE, ISC)</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 border-2 border-purple-200">
+                <div className="text-5xl mb-4">⚛️</div>
+                <h4 className="text-2xl font-bold text-navy mb-2">Physics</h4>
+                <p className="text-gray-600 text-sm">Mechanics, Thermodynamics & Optics</p>
+              </div>
+              
+              <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 border-2 border-pink-200">
+                <div className="text-5xl mb-4">🧪</div>
+                <h4 className="text-2xl font-bold text-navy mb-2">Chemistry</h4>
+                <p className="text-gray-600 text-sm">Organic, Inorganic & Physical Chemistry</p>
+              </div>
+              
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 border-2 border-blue-200">
+                <div className="text-5xl mb-4">📐</div>
+                <h4 className="text-2xl font-bold text-navy mb-2">Mathematics</h4>
+                <p className="text-gray-600 text-sm">Calculus, Algebra & Coordinate Geometry</p>
+              </div>
             </div>
           </div>
         </div>
@@ -77,7 +105,7 @@ function App() {
           
             <div className="feature-card bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center border border-gray-100">
               <div className="text-5xl mb-4">👥</div>
-              <h3 className="font-bold text-xl text-navy mb-2">Only 4 Students per Batch</h3>
+              <h3 className="font-bold text-xl text-navy mb-2">Only 5 Students per Batch</h3>
               <p className="text-gray-600">Personal Attention</p>
             </div>
 
@@ -133,7 +161,7 @@ function App() {
                   </div>
                   <div>
                     <p className="text-sm opacity-80 mb-1">Batch Size</p>
-                    <p className="text-2xl font-bold">4 Students Max</p>
+                    <p className="text-2xl font-bold">5 Students Max</p>
                   </div>
                 </div>
               </div>
