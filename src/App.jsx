@@ -2,6 +2,37 @@ import React from 'react';
 import './App.css';
 
 function App() {
+  const reviews = [
+    {
+      quote: 'Muskan ma\'am is a great teacher, understands her students really well and is remarkably well-versed in Maths, Social Studies, Science, as well as Mental Ability (logical reasoning). Her lessons are easy to remember and enjoyable for every student. She ensures strong concept clarity, and there has never been a question I asked her that she couldn\'t answer.',
+      name: 'Addya Singh',
+      classLevel: 'Class 8',
+      subject: 'Mathematics, Social Studies, Science, Mental Ability (Logical Reasoning)',
+      rating: 5,
+    },
+    {
+      quote: 'I was never interested in studies. Then when Muskan ma\'am came in and started teaching me, my grades and my interest both grew. She has a different way of teaching, and it helped me a lot. Thanks for teaching me!',
+      name: 'Cyanne Peter',
+      classLevel: 'ICSE Class 10',
+      subject: 'EVS, Geography, History, Civics, Information & Communication Technology',
+      rating: 5,
+    },
+    {
+      quote: 'Muskan has been my son\'s tutor in 10th grade for Maths and Science subjects. She has been excellent in her approach, preparation, and knowledge. She balances teaching new concepts with regular practice through assignments and mock tests. She is also very flexible in adjusting to sudden requirements. Overall, I would highly recommend Muskan.',
+      name: 'Tushar Bhatia',
+      classLevel: 'CBSE Class 10',
+      subject: 'Biology, Chemistry, Mathematics, Physics',
+      rating: 5,
+    },
+    {
+      quote: 'Ma\'am was really helpful in teaching me concepts and used creative ways of explaining so that I could remember them easily. Her explanations were very clear and made studying much easier for me.',
+      name: 'Aarna',
+      classLevel: 'ICSE Class 8',
+      subject: 'Biology, Chemistry, Mathematics, Physics',
+      rating: 5,
+    },
+  ];
+
   return (
     <div className="bg-cream text-gray-800">
       <header className="hero-gradient text-white py-20 px-6 relative overflow-hidden">
@@ -139,6 +170,29 @@ function App() {
               <p className="text-gray-600">Progress Tracking</p>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-4">Student Reviews</h2>
+          <p className="text-lg text-gray-600 text-center mb-12">What students and parents say about NxtGen classes</p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {reviews.map((review, index) => (
+              <article key={`${review.name}-${index}`} className="bg-cream rounded-2xl p-7 border border-gray-200 shadow-md hover:shadow-lg transition duration-300">
+                <div className="text-amber-500 text-xl mb-4" aria-label={`${review.rating} star rating`}>
+                  {'★'.repeat(review.rating)}
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-6">“{review.quote}”</p>
+                <div className="border-t border-gray-200 pt-4">
+                  <p className="font-bold text-navy text-lg">{review.name}</p>
+                  <p className="text-sm text-gray-600">{review.classLevel}</p>
+                  <p className="text-sm text-gray-600 mt-1">Subjects: {review.subject}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
